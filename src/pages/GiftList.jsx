@@ -41,11 +41,11 @@ function GiftList() {
 
       {!pessoaSelecionada ? (
         <div className="message">
-          <p> Selecione uma pessoa para ver a lista de prendas </p>
+          <p> Selecione uma pessoa para ver a lmista de prendas </p>
         </div>
       ) : (
         <div className="gift-card">
-          <h2>Lista da {pessoaSelecionada.nome}</h2>
+          <h2>{pessoaSelecionada.nome} pensa em comprar: </h2>
           {pessoaSelecionada.prendas && pessoaSelecionada.prendas.length > 0 ? (
             <ul>
               {pessoaSelecionada.prendas.map((prenda, index) => (
