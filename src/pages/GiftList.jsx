@@ -1,4 +1,3 @@
-import "./GiftList.css";
 import Button from "../components/Button/Button";
 import { useState } from "react";
 import { giftList } from "../data/giftList";
