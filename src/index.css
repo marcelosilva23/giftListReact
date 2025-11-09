@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #730217 0%, #BF0426 100%);
+  min-height: 100vh;
+  color: #D9C1BF;
+}
+
+/* Container principal */
+.gift-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Título principal */
+h1 {
+  color: #D9C1BF;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu de botões */
+menu {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.message {
+  background-color: rgba(217, 193, 191, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px dashed #D9C1BF;
+  font-size: 1.2rem;
+  color: #D9C1BF;
+}
+
+/* Lista de Prendas */
+.gift-card {
+  background: linear-gradient(145deg, rgba(217, 193, 191, 0.95), rgba(217, 146, 121, 0.9));
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.4s ease-out;
+  color: #730217;
+}
+
+/* transição para abertura do card */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gift-card h2 {
+  color: #BF0425;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 3px solid #F20530;
+  padding-bottom: 15px;
+}
+
+/* Lista das prendas */
+.gift-card ul {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gift-card li {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border-left: 10px solid #F20530;
+  font-size: 20px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gift-card li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gift-card strong {
+  color: #BF0426;
+  font-size: 1.2rem;
+}
+
+/* Mensagem sem prendas */
+.no-gifts {
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2rem;
+  color: #730217;
+  font-style: italic;
+}
+
+.btn-voltar {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+}a

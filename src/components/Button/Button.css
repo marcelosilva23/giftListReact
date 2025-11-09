@@ -1,0 +1,27 @@
+button {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 3px solid #D9C1BF;
+  border-radius: 50px;
+  background-color: transparent;
+  color: #D9C1BF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.color {
+  background-color: #F20530;
+  color: white;
+  border-color: #F20530;
+  box-shadow: 0 6px 20px rgba(242, 5, 48, 0.4);
+}
+
